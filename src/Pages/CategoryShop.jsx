@@ -57,11 +57,11 @@ const CategoryShop = ({ category }) => {
         ))}
       </div>
       <h1 className="text-3xl font-bold mt-8 text-orange-500">FOOTWEAR</h1>
-      <div className="flex flex-wrap justify-start  mt-5 gap-10">
+      <div className="flex flex-wrap justify-center  mt-5 gap-10">
         {footwearFiltered.map((item) => (
           <div
             key={item.id}
-            className="p-4 w-80 rounded-lg bg-white shadow cursor-pointer hover:shadow-2xl hover:shadow-gray-300"
+            className="w-60 p-4 sm:w-70 md:w-80 rounded-lg bg-white shadow cursor-pointer hover:shadow-2xl hover:shadow-gray-300"
           >
             <img
               src={item.image}
