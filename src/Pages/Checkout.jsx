@@ -39,7 +39,7 @@ const Checkout = () => {
         ) : (
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="w-100 flex flex-col gap-5 p-2 py-10 text-center m-auto mt-8 rounded-2xl bg-white"
+            className="w-75 sm:w-100 flex flex-col gap-5 p-2 py-10 text-center m-auto mt-8 rounded-2xl bg-white"
           >
             <h2 className="text-white">Enter Your Details</h2>
             <div>
