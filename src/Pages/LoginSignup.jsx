@@ -30,7 +30,7 @@ const LoginSignup = () => {
         {error && <p className="text-red-400">{error}</p>}
 
         <form action="" onSubmit={handleSubmit(onSubmit)}>
-          <div className="flex flex-col gap-10 border-1 border-gray-200 w-90 py-10 rounded-2xl items-center">
+          <div className="flex flex-col gap-10 border-1 border-gray-200 w-75 sm:w-90 py-10 rounded-2xl items-center">
             {!isLogin && (
               <>
                 <input
