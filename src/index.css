@@ -1,0 +1,23 @@
+@import "tailwindcss";
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    /* background-color:rgb(237, 193, 219) ; */
+}
+.menu{
+    border-bottom: 2px solid;
+    color:rgb(245, 122, 196);
+    font-weight: bold;
+}
+.menu:hover{
+    box-shadow: 0px 5px 5px -3px rgb(245, 122, 196);
+}
+.mask-image-fade {
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
