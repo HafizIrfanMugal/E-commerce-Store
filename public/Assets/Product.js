@@ -2,7 +2,7 @@
   {
       id: 1,
       category: "kid",
-      image: "/public/Assets/Kid/Pent-Shirts/K-D-12.webp",
+      image: "public/Assets/Kid/Pent-Shirts/K-D-12.webp",
     },
      {
       id: 2,
