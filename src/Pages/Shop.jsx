@@ -21,7 +21,7 @@ const Shop = () => {
         </div>
         <img
           className="hidden sm:block lg:h-130 md:h-100 sm:h-90 mix-blend-darken"
-          src="src/Components/Assets/Men/Suit/Suite-12-.webp"
+          src="public/Assets/Men/Suit/Suite-12-.webp"
           alt=""
         />
       </div>

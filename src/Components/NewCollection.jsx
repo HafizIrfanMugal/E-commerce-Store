@@ -1,5 +1,5 @@
 import React from 'react'
-import { newCollection } from './Assets/Product'
+import { newCollection } from './Product';
 import { useCart } from '../Context/CartContext'
 const NewCollection = () => {
     const { addCart } = useCart();

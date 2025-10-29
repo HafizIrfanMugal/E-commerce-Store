@@ -116,9 +116,6 @@ const LoginSignup = () => {
             {errors.password && (
               <p className="text-red-400">{errors.password.message}</p>
             )}
-            {!isLogin && (
-              <i class="bi bi-shield-lock-fill  text-5xl absolute top-49 text-white left-10.5 rounded-full"></i>
-            )}
             <input
               className="text-lg font-bold bg-white p-1 w-60 rounded-3xl cursor-pointer hover:bg-gray-100"
               type="submit"

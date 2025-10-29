@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./Assets/logo.png";
+import logo from "/public/Assets/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 import { useCart } from "../Context/CartContext";

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { products } from "../Components/Assets/Product";
-import { banner } from "../Components/Assets/Product";
+import { products } from "../Components/Product";
+import { banner } from "../Components/Product";
 import { useCart } from "../Context/CartContext";
 const CategoryShop = ({ category }) => {
   const { addCart } = useCart();
