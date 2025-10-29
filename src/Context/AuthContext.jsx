@@ -15,23 +15,24 @@ const AuthProvider = ({children}) => {
         const users = JSON.parse(localStorage.getItem("users") || "[]")
         if (users.some((u)=> u.email === email)) {
             setError("Account with this email already exist")
-            return;
+            return false;
         } 
         const newUser = {id: Date.now(), username, email, password}
         users.push(newUser)
         localStorage.setItem("users", JSON.stringify(users))
         alert("Signup successfull! Pleae login");
+        return true
      }
      const login = (email, password)=>{
         const users = JSON.parse(localStorage.getItem("users") || "[]")
         const user = users.find((u)=> u.email === email);
         if (!user) {
             setError("No account with this email")
-            return;
+            return false;
         }
         if (user.password !== password) {
             setError("Incorrect password")
-            return;
+            return false;
         }
         const session = {
             id: user.id,
@@ -41,6 +42,7 @@ const AuthProvider = ({children}) => {
         localStorage.setItem("isLoggedUser", JSON.stringify(session))
         setLoggedUser(session)
         alert(`Welcome back, ${user.username}!`);
+        return true;
         
      }
 const logout = ()=>{

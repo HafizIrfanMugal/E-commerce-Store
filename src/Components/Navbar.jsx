@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "/public/Assets/logo.png";
+import logo from "/public/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 import { useCart } from "../Context/CartContext";
@@ -146,7 +146,7 @@ const Navbar = () => {
               </span>
               <button
                 onClick={handleLogout}
-                className="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition"
+                className="bg-red-500 text-white cursor-pointer px-6 py-2 rounded-full hover:bg-red-600 transition"
               >
                 Logout
               </button>
@@ -155,7 +155,7 @@ const Navbar = () => {
             <NavLink
               to="/loginSignup"
               onClick={() => setMenuOpen(false)}
-              className="border px-6 py-2 rounded-full text-pink-400 font-semibold hover:bg-pink-50 transition"
+              className="border cursor-pointer px-6 py-2 rounded-full text-pink-400 font-semibold hover:bg-pink-50 transition"
             >
               Login
             </NavLink>

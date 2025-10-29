@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "/public/Assets/logo.png";
+import logo from "/public/logo.png";
 const Bottom = () => {
   return (
     <div className="h-screen">

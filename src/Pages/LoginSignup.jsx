@@ -6,6 +6,7 @@ const LoginSignup = () => {
   const {
     register,
     handleSubmit,
+    reset,
     watch,
     formState: { errors },
   } = useForm();
@@ -15,16 +16,21 @@ const LoginSignup = () => {
   const navigate = useNavigate();
   const onSubmit = (data) => {
     if (isLogin) {
-      login(data.email, data.password);
-      navigate("/");
+     const success = login(data.email, data.password);
+      if (success) {
+        alert(`Welcome back!`);
+        navigate("/");
+      }
     } else {
       signup(data.username, data.email, data.password);
+      reset();
+      setIsLogin(true);
     }
   };
   return (
     <>
-      <div className="h-screen p-24 flex flex-col items-center gap-10 bg-black font-stretch-expanded ">
-        <h1 className="text-2xl mt-10 font-bold text-white ">
+      <div className=" p-24 flex flex-col items-center gap-5 bg-black font-stretch-expanded ">
+        <h1 className="text-2xl mt-4 font-bold text-white ">
           {isLogin ? "User Login" : "User Sign In"}
         </h1>
         {error && <p className="text-red-400">{error}</p>}
