@@ -410,7 +410,7 @@
       name: "Outclass white embroider suite",
       price: 6599,
       category: "women",
-      image: "public/Assets/Women/Dresses/Fancy-Dresses/Fancy-7.webp",
+      image: "/Assets/Women/Dresses/Fancy-Dresses/Fancy-7.webp",
     },
     {
       id: 57,
